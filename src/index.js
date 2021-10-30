@@ -1,5 +1,8 @@
 console.log('work');
-import math, {sum} from "./helpers/math";
+import  {sum, divideArr, currCon} from "./helpers/math";
 import './style/menu.scss';
+
+
 console.log(sum(5,5));
-math();
+console.log(divideArr(str));
+console.log(currCon(150));
