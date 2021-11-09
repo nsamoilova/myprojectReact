@@ -12,7 +12,7 @@ export function divideArr(arr){
 }
 
 
-console.log(divideArr(str))
+
 
 
 export function currCon(a){

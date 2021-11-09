@@ -1,8 +1,10 @@
 console.log('work');
 import  {sum, divideArr, currCon} from "./helpers/math";
-import './style/menu.scss';
+import './style/default.scss';
+import ReactDom from 'react-dom';
+import React from 'react';
+import App from './components/App'
 
+const element = document.querySelector('#root');
 
-console.log(sum(5,5));
-console.log(divideArr(str));
-console.log(currCon(150));
+ReactDom.render(<App />, element);

@@ -2,10 +2,11 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
+
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
-    path: path.resolve(__dirname, 'public/dist'),
+    path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
   },
    
@@ -23,6 +24,11 @@ module.exports = {
             use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader" ]
            },
 
+           {
+            test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            type: 'asset/resource',
+          },
+
        ]
 
     },
@@ -35,6 +41,11 @@ module.exports = {
             liveReload: true
 
          }
+
+          
+
+ 
+
 
 }
 
