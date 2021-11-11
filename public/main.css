@@ -52,7 +52,7 @@ body {
 /*!******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/components/Contacts/style.module.scss ***!
   \******************************************************************************************************************************************************/
-.iSdl_IT9aTM9fyFXpIe_ {
+.kfYIOxGIi355853htsVP {
   display: flex;
   justify-content: space-between;
   width: auto;
@@ -103,4 +103,72 @@ body {
 
 .KZXtxgMbpVMkcCZe888E:last-child {
   margin-right: 0;
+}
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/components/Logo/style.module.scss ***!
+  \**************************************************************************************************************************************************/
+.gFzuE2kv50fn5MTWpv9f {
+  max-width: 200px;
+  width: 200px;
+  min-width: 200px;
+  height: auto;
+  display: block;
+}
+/*!***********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/style.module.scss ***!
+  \***********************************************************************************************************************************/
+.eTTtVchPo2Vz_EwAl36v {
+  flex-grow: 1;
+}
+/*!***************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/Form/style.module.scss ***!
+  \***************************************************************************************************************************************************/
+.IPivzTuXXCaHclp7kFxl {
+  margin: 15px;
+}
+
+.ajbOrPlHNtCww3NBRDXl {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.oPgosF5cNVtLi402lw9l {
+  width: 50px;
+  height: 50px;
+}
+/*!***********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/Todo/components/TodoItem/style.module.scss ***!
+  \***********************************************************************************************************************************************************************/
+.UhB0WikZjqQkdAXGsVhf {
+  border: 1px solid #adaaaa;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.UhB0WikZjqQkdAXGsVhf:not(:last-child) {
+  margin-bottom: 15px;
+}
+/*!***************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Form/Button/style.module.scss ***!
+  \***************************************************************************************************************************************/
+.JFaYntXRb6CXqteV28gj {
+  border: 1px solid black;
+  padding: 15px;
+}
+/*!***************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/Todo/style.module.scss ***!
+  \***************************************************************************************************************************************************/
+.exa05E33nfF26m6Js4AK {
+  margin: 15px auto;
+  max-width: 500px;
+  width: 100%;
+}
+/*!**********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Footer/style.module.scss ***!
+  \**********************************************************************************************************************************/
+.xctHIHyRXVi8Z4Y9o4Ud {
+  height: 50px;
+  background-color: black;
+  color: blanchedalmond;
 }
