@@ -3,6 +3,7 @@ import styles from './style.module.scss'
 
 class Button extends React.Component{
     render() {
+        console.log('render')
         return (
             <button 
                 onClick={this.props.onClick}

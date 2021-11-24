@@ -1,35 +1,24 @@
 import React from 'react';
+import _ from 'lodash'
 
 
 function Memo(Component){
     return class extends React.Component{
+        shouldComponentUpdate(nextProps,nextState){
+            console.log(this.props, nextProps)
+        //  if (_.isEqual(this.props, nextProps)){
+        //         return false
+        //     }
 
-        constructor(props){
-            super(props)
-
-            this.state={
-                count: 0
-            }
+        //     return true
+        return !_.isEqual(this.props, nextProps)
+           
         }
-
-    onClickButton = (e) =>{
-        this.props.onClickButton(e);
-    }
-
-    shouldComponentUpdate(nextProps, nextState){
-      this.shouldComponentUpdate(nextProps,nextState)
-    }
-
-    
-
-
+        
         render() {
             return (
-                
-             <Component items={this.state.count}
-             click={this.onClickButton}
-             update={this.shouldComponentUpdate}
-             />
+           
+            <Component {...this.props}/>
           )
       }
     }
