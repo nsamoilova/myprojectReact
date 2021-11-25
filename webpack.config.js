@@ -25,7 +25,7 @@ module.exports = {
            },
 
            {
-            test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
             type: 'asset/resource',
           },
 
@@ -46,7 +46,9 @@ module.exports = {
            alias: {
              components: path.resolve(__dirname, 'src/components'),
              hoc: path.resolve(__dirname, 'src/HOC'),
-             images: path.resolve(__dirname, 'src/images')
+             images: path.resolve(__dirname, 'src/images'),
+             videos: path.resolve(__dirname, 'src/videos'),
+             pages: path.resolve(__dirname, 'src/pages')
            }
          }
 

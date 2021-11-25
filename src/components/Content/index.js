@@ -9,7 +9,10 @@ import PrevienImages from 'components/Image/versions/PrevienImages';
 import FunctionalComponent from './components/FunctionalComponent';
 import TodoFunc from './components/Todo/components/TodoFunc';
 import Users from './components/Users';
-import FormConnected from './components/FormConnected';
+import HomeWork from './components/HomeWork';
+import VideoPlayer from './components/VideoPlayer';
+import { Routes, Route} from 'react-router-dom';
+import HomePages from 'pages/HomePages';
 
 class Content extends React.Component {
     render() {
@@ -20,8 +23,11 @@ class Content extends React.Component {
               {/* <FunctionalComponent title='hello' />  */}
             {/* <TodoFunc /> */}
             {/* <Users /> */}
-            <FormConnected />
-              
+            {/* <Routes>
+                <Route path='/' element={<HomePages/>}/>
+            </Routes>
+               */}
+               <HomeWork />
             </div>
         )
     }
