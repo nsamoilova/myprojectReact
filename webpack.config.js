@@ -35,11 +35,18 @@ module.exports = {
 
     devServer: {
            static: {
-             directory: path.resolve(__dirname,'public') 
+             directory: path.resolve(__dirname,'public') ,
+             
+             
            },
-            open: true,
-            liveReload: true
+           
 
+            open: true,
+            liveReload: true,
+            port:8080,
+            historyApiFallback:true,
+            
+          
          },
 
          resolve: {

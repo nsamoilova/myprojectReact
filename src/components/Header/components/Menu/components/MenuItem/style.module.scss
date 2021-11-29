@@ -8,13 +8,14 @@
     cursor: pointer;
     transition: color 1.0s linear;
     opacity: 0.3s ease-in-out;
+    text-decoration: none;
+
 }
 
-.menuItem:last-child{
-    margin-right: 0;
+
+.active {
+    color:#fbdc0c
 }
-
-
 
 .menuItem:hover {
     border-bottom: 1px solid #fbdc0c;

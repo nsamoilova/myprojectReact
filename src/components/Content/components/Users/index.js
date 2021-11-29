@@ -40,7 +40,8 @@ const Users = () => {
 }
 
 export {
-    UsersContext
+    UsersContext,
+    usersList
 }
 
 export default Users;

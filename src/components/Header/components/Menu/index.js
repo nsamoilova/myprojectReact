@@ -7,11 +7,11 @@ class Menu extends React.Component {
     render() {
         return (
             <ul className = {styles.menu}>
-                <MenuItem title='Курсы'/>
-                <MenuItem title='Мастер-классы'/>
-                <MenuItem title='Преподаватели'/>
-                <MenuItem title='Блог'/>
-                <MenuItem title='Контакты'/>
+                <MenuItem title='Курсы' to="/kursy-programmirovaniya"/>
+                <MenuItem title='Мастер-классы' to="/besplatnye-probnye-zanatia"/>
+                <MenuItem title='Преподаватели' to="/teacher"/>
+                <MenuItem title='Блог' to="/blog"/>
+                <MenuItem title='Контакты' to="/contact"/>
             </ul>
 
         )
