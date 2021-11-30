@@ -30,6 +30,7 @@ import PostTwoPages from 'pages/PostTwoPages';
 import CommentTwoPages from 'pages/CommentTwoPages';
 import PostThreePages from 'pages/PostThreePages';
 import CommentThreePages from 'pages/CommentThreePages';
+import PostsPages from 'pages/PostsPages';
 
 class Content extends React.Component {
     render() {
@@ -56,6 +57,9 @@ class Content extends React.Component {
                    <Route path="download" element={<DownloadsPages/>} />
                 </Route> */}
                 <Route path='/' element={<HomeWorkPages/>}/> 
+                <Route path='/posts' element={<PostsPages/>}>
+                      {/* <Route path="comments" element={<CommentsPages/>} /> */}
+                    </Route>
                     <Route path='/post-1' element={<PostOnePages/>}>
                       <Route path="comment" element={<CommentOnePages/>} />
                     </Route>

@@ -4,31 +4,31 @@ import styles from './style.module.scss'
 
 
 
-const PostOnePages = () => {
+const PostsPages = () => {
 
-    const [post, setPost] = useState({
-        post: []
+    const [posts, setPost] = useState({
+        posts: []
       });
 
       useEffect(() => {
         console.log("post 1");
-        fetch("https://jsonplaceholder.typicode.com/posts/1" )
+        fetch("https://jsonplaceholder.typicode.com/posts" )
         .then(response => response.json())
         .then(json => console.log(json))
-      }, [post]);
+      }, [posts]);
    
 
     return(
         
         <div className={styles.postitem}>
-            {post.post.map(item => {
-            <h2 className={styles.title}>Post 1</h2>
+            {posts.posts.map(item => {
+            <h2 className={styles.title}>Posts</h2>
             })}
-            <Link to="comment" className={styles.comment}>Comment</Link>
+           
             
             <Outlet />
         </div>
     )
 }
 
-export default PostOnePages;
+export default PostsPages;

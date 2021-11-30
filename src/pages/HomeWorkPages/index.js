@@ -7,6 +7,7 @@ const HomeWorkPages = () => {
         <div >
             <h1 className={styles.title}>Blog</h1>
             <div className={styles.blogitem}>
+               <Link to="/posts" className={styles.post}>Posts</Link>
                <Link to="/post-1" className={styles.post}>Post 1</Link>
                <Link to="/post-2" className={styles.post}>Post 2</Link>
                <Link to="/post-3" className={styles.post}>Post 3</Link>
