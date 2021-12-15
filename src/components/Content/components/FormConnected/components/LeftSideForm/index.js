@@ -7,7 +7,7 @@ import {UsersContext} from '../../index'
 
 
 
-const LeftSideForm = ({value,onChange}) => {
+const LeftSideForm = ({value,onChange }) => {
   
     
 
@@ -18,7 +18,7 @@ const LeftSideForm = ({value,onChange}) => {
     return (
         <div className={styles.form}>
            
-            <Input value={value} onChange={onChange}/>
+            <Input value={value} data-testid='inputLeft' onChange={onChange}/>
            
         </div>
     )

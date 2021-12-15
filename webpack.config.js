@@ -55,7 +55,8 @@ module.exports = {
              hoc: path.resolve(__dirname, 'src/HOC'),
              images: path.resolve(__dirname, 'src/images'),
              videos: path.resolve(__dirname, 'src/videos'),
-             pages: path.resolve(__dirname, 'src/pages')
+             pages: path.resolve(__dirname, 'src/pages'),
+             redux_main: path.resolve(__dirname, 'src/redux')
            }
          }
 

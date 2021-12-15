@@ -10,7 +10,7 @@ class TodoItem extends React.Component{
 
     render() {
         return (
-            <div className={styles.item}>
+            <div className={styles.item} id={'todo-item-' + this.props.id} data-testid="todo-item">
                 {this.props.title}
                 <Button onClick={this.onClickHandler}>Delete</Button>
             </div>

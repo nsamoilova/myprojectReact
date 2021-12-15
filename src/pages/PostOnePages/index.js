@@ -21,9 +21,10 @@ const PostOnePages = () => {
     return(
         
         <div className={styles.postitem}>
-            {post.post.map(item => {
-            <h2 className={styles.title}>Post 1</h2>
+            {post.map(post => {
+             <div>{post.id}</div>
             })}
+            <h2 className={styles.title}>Post 1 </h2>
             <Link to="comment" className={styles.comment}>Comment</Link>
             
             <Outlet />

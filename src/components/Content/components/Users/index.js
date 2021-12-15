@@ -1,6 +1,8 @@
 
 import React, { useEffect, useState } from "react";
 import List from "./components/List";
+import { removeUsers } from "../../../../redux/action/users";
+import { connect } from 'react-redux';
 
 const usersList = [
     {id: 1, name:'Дима', age: 16},
@@ -12,18 +14,18 @@ const usersList = [
 
 const UsersContext = React.createContext();
 
-const Users = () => {
+const Users = ({ removeUsers, users }) => {
 
-  const [users, setUsers] = useState([]);
+  
   const { Provider } = UsersContext;
 
   useEffect(() => {
     setUsers(usersList)
   }, []);
 
-  const deleteUser = (id) => {
-    const newUsers = users.filter( user => user.id !== id);
-    setUsers(newUsers)
+  const deleteUser = () => {
+    // const newUsers = users.filter( user => user.id !== id);
+    removeUsers(users)
   }
 
 //   const a ={
@@ -39,9 +41,22 @@ const Users = () => {
    )
 }
 
-export {
-    UsersContext,
-    usersList
+function mapStateToProps(state) {
+  return {
+      users: state.users.users
+  }
 }
 
-export default Users;
+
+
+const mapDispatchToProps = {
+    removeUsers: removeUsers
+}
+
+export {
+    UsersContext,
+    usersList,
+  
+}
+
+export default connect(Users);

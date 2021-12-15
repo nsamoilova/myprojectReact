@@ -15,7 +15,7 @@ const RightSideForm = ({value, onChange}) => {
 
     return (
         <div className={styles.form}>
-            <Input value={value} onChange={onChangeHandler}/>
+            <Input value={value} data-testid='inputRight' onChange={onChangeHandler}/>
             
         </div>
     )

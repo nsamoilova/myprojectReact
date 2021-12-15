@@ -12,6 +12,7 @@ class Menu extends React.Component {
                 <MenuItem title='Преподаватели' to="/teacher"/>
                 <MenuItem title='Блог' to="/blog"/>
                 <MenuItem title='Контакты' to="/contact"/>
+                
             </ul>
 
         )

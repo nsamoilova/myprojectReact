@@ -21,8 +21,8 @@ const FormConnected = () => {
     return (
         <div className={styles.form}>
        
-            <LeftSideForm value={value} onChange={onChangeValue}/>
-            <RightSideForm value={value} onChange={onChangeValue} />
+            <LeftSideForm value={value}  onChange={onChangeValue}/>
+            <RightSideForm value={value}  onChange={onChangeValue} />
    
         </div>
     )

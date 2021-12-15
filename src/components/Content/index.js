@@ -32,20 +32,15 @@ import PostThreePages from 'pages/PostThreePages';
 import CommentThreePages from 'pages/CommentThreePages';
 import PostsPages from 'pages/PostsPages';
 
+
 class Content extends React.Component {
     render() {
         return (
-            <div className={styles.content}>
-               {/* <SmallImage src={backgroundImage} />
-              <PrevienImages src={backgroundImage} /> */}
-              {/* <FunctionalComponent title='hello' />  */}
-            {/* <TodoFunc /> */}
-            {/* <Users /> */}
-            {/* <FormConnected /> */}
-            
+          
+          <div className={styles.content}>
             <Routes>
-                {/* <Route path='/' element={<HomePages/>}/> */}
-                {/* <Route path='/course' element={<CoursePages/>}/>
+                <Route path='/' element={<HomePages/>}/>
+                <Route path='/course' element={<CoursePages/>}/>
                 <Route path='/kursy-programmirovaniya' element={<KursyPages/>}/>
                 <Route path='/besplatnye-probnye-zanatia' element={<MasterPages/>}/>
                 <Route path='/teacher' element={<TeacherPages/>}/>
@@ -55,10 +50,10 @@ class Content extends React.Component {
                 <Route path='/users/:id' element={<UsersDetailPages/>}/>
                 <Route path='/my-account' element={<MayAccountPages/>}>
                    <Route path="download" element={<DownloadsPages/>} />
-                </Route> */}
-                <Route path='/' element={<HomeWorkPages/>}/> 
+                </Route>
+                {/* <Route path='/' element={<HomeWorkPages/>
                 <Route path='/posts' element={<PostsPages/>}>
-                      {/* <Route path="comments" element={<CommentsPages/>} /> */}
+                     
                     </Route>
                     <Route path='/post-1' element={<PostOnePages/>}>
                       <Route path="comment" element={<CommentOnePages/>} />
@@ -68,10 +63,12 @@ class Content extends React.Component {
                     </Route>
                     <Route path='/post-3' element={<PostThreePages/>}>
                       <Route path="comment" element={<CommentThreePages/>} />
-                    </Route>
+                    </Route> */}
             </Routes>
-            
-            </div >
+
+
+            </div>
+           
         )
     }
 }

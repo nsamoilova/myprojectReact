@@ -8,11 +8,14 @@ class Button extends React.Component{
             <button 
                 onClick={this.props.onClick}
                 className={styles.button}
+                data-testid='button'
             >
                 {this.props.children}
             </button>
         )
     }
 }
+
+
 
 export default Button;

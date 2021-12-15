@@ -1,6 +1,7 @@
 import React from 'react';
 import {  Outlet,Link } from 'react-router-dom';
 import styles from './style.module.scss';
+import Albums from '../../components/Content/components/Albums';
 
 const HomeWorkPages = () => {
     return (
@@ -12,6 +13,7 @@ const HomeWorkPages = () => {
                <Link to="/post-2" className={styles.post}>Post 2</Link>
                <Link to="/post-3" className={styles.post}>Post 3</Link>
                < Outlet />
+                 
             </div>
         </div>
     )

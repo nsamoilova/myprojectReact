@@ -13,7 +13,7 @@ const onClickHandler = () => {
 };
 
     return (
-        <div className={styles.item}>
+        <div  className={styles.item} id={'user-item-' + id}>
             <Link to={"/users/" + id}>{name} | {age}</Link>
             <Button onClick={onClickHandler}>Delete</Button>
             </div>
