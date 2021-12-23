@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/index.js'),
+  entry: path.resolve(__dirname, 'src/index.tsx'),
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
@@ -29,6 +29,12 @@ module.exports = {
             type: 'asset/resource',
           },
 
+          {
+            test: /\.tsx?$/,
+            use: 'ts-loader',
+            exclude: /node_modules/,
+          }
+
        ]
 
     },
@@ -50,6 +56,7 @@ module.exports = {
          },
 
          resolve: {
+           extensions: ['.tsx','.ts', '.js'],
            alias: {
              components: path.resolve(__dirname, 'src/components'),
              hoc: path.resolve(__dirname, 'src/HOC'),

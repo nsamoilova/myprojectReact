@@ -31,6 +31,7 @@ import CommentTwoPages from 'pages/CommentTwoPages';
 import PostThreePages from 'pages/PostThreePages';
 import CommentThreePages from 'pages/CommentThreePages';
 import PostsPages from 'pages/PostsPages';
+import TestTypescript from '../../pages/TestTypescript';
 
 
 class Content extends React.Component {
@@ -39,7 +40,7 @@ class Content extends React.Component {
           
           <div className={styles.content}>
             <Routes>
-                <Route path='/' element={<HomePages/>}/>
+                <Route path='/' element={<TestTypescript/>}/>
                 <Route path='/course' element={<CoursePages/>}/>
                 <Route path='/kursy-programmirovaniya' element={<KursyPages/>}/>
                 <Route path='/besplatnye-probnye-zanatia' element={<MasterPages/>}/>
